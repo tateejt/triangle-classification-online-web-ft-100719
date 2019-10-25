@@ -10,6 +10,7 @@ attr_accessor :x, :y, :z
 
   
   def kind
+end
   
   
   class TriangleError < StandardError
