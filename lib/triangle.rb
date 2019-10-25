@@ -10,6 +10,12 @@ attr_accessor :x, :y, :z
 
   
   def kind
+    
+    if kosher_triangle == true && kosher_triangle2 == true 
+      puts true 
+    else 
+      raise TriangleError 
+    end 
      if x == y && y == z && x == z
       :equilateral
     elsif x != y && y != z && z != x
