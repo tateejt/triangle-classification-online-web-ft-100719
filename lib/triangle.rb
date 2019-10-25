@@ -18,6 +18,14 @@ attr_accessor :x, :y, :z
       :isosceles
     end 
 end
+
+def kosher_triangle 
+    x.positive? && y.positive? && z.positive?
+  end 
+  
+  def kosher_triangle2 
+    x + y > z && x + z > y && y + z > x
+  end 
   
   
   class TriangleError < StandardError
